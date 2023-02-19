@@ -1,0 +1,86 @@
+/** Basic config file **/
+
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus";
+  display-drun: "";
+  display-window: "﩯 ";
+  font: "Ubuntu 12";
+  display-combi: "  ";
+}
+/** @theme "themes/sidetab-nord.rasi" **/
+
+@theme "/dev/null"
+
+* {
+  bg: #11121D70;
+  bg-alt: #444b6a30;
+
+  fg: #ff00ff;
+  fg-alt: #ffffff;
+
+  background-color: @bg;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+  width: 30%;
+
+}
+
+element {
+  padding: 8 0;
+  text-color: @fg-alt;
+  background-color: #00000000;
+}
+
+element selected {
+  background-color: @bg;
+  text-color: @fg;
+}
+
+element-text {
+  background-color: #00000000;
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  background-color: #00000000;
+  size: 14;
+  padding: 0 10 0 15;
+}
+
+entry {
+  background-color: @bg-alt;
+  padding: 10;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+listview {
+  background-color: @bg;
+  columns: 1;
+  lines: 8;
+}
+
+mainbox {
+  background-color: @bg;
+  children: [inputbar, listview];
+}
+
+prompt {
+  background-color: @bg-alt;
+  enabled: true;
+  padding: 10 0 0 15;
+  text-color: @fg;
+}
+
+/* vim: ft=sass

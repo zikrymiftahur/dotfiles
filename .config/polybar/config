@@ -1,0 +1,440 @@
+[global/wm]
+
+margin-bottom = 0
+margin-top = 0
+
+include-file = ~/.config/polybar/colors.ini
+
+# contains brightness, workspaces, Date, etc.... #
+include-file = ~/.config/polybar/modules/modules
+
+# contains Music, microphone, etc.... #
+include-file = ~/.config/polybar/modules/mediaModules
+
+# contains CPU, Temperature, etc.... #
+include-file = ~/.config/polybar/modules/monitoringModules
+
+# contains the separators (e.g  , | , <| ,  ,etc..) #
+include-file = ~/.config/polybar/modules/separatorsModules
+
+## ----------------------------------  [bar/bar1] ---------------------------------- ##
+
+[bar/bar1]
+
+monitor = 
+monitor-fallback =
+monitor-strict = false
+
+override-redirect = false
+
+bottom = false
+fixed-center = true
+
+width = 3.55%
+height = 30
+
+offset-x = 0.25%
+offset-y = 0.5%
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+radius = 6
+
+line-size = 2
+line-color = ${color.blue}
+
+border-size = 0
+border-color = ${color.bg}
+
+padding = 0
+
+module-margin-left = 2
+module-margin-right = 0
+
+font-0 = "Ubuntu Nerd Font:size=10;3"
+font-1 = "Ubuntu Nerd Font:size=12;3"
+font-2 = "google\-mdi:size=12;3"
+font-3 = "Ubuntu:style=bold:size=12;3"
+font-4 = "Ubuntu Nerd Font:size=18;4"
+font-5 = "Ubuntu:style=bold:size=18;4"
+font-6 = "Font Awesome 6 Brands:size=12;3"
+font-7 = "Ubuntu Nerd Font:style=bold:size=14;4"
+
+modules-left = 
+modules-center = xdomenu sep-line file
+modules-right = 
+
+separator =
+dim-value = 1.0
+
+wm-restack = bspwm
+enable-ipc = true
+
+cursor-click = pointer 
+
+## ----------------------------------  [bar/bar2] ---------------------------------- ##
+
+[bar/bar2]
+
+monitor = 
+monitor-fallback =
+monitor-strict = false
+
+override-redirect = false
+
+bottom = false
+fixed-center = false
+
+width = 12.3%
+height = 30
+
+offset-x = 4.1%
+offset-y = 0.5%
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+radius = 6
+
+line-size = 2
+line-color = ${color.blue}
+
+border-size = 0
+border-color = ${color.bg}
+
+padding = 1
+
+module-margin-left = 3
+module-margin-right = 0
+
+font-0 = "Ubuntu Nerd Font:style=bold:size=10;3"
+font-1 = "Ubuntu Nerd Font:style=bold:size=12;3"
+font-2 = "google\-mdi:size=10;2"
+font-3 = "Ubuntu:style=bold:size=12;3"
+font-4 = "Ubuntu Nerd Font:style=bold:size=18;4"
+font-5 = "Ubuntu:style=bold:size=18;4"
+font-6 = "waffle:size=18;3"
+font-7 = "Ubuntu:style=bold:size=11;2"
+
+modules-left = space bspwm 
+modules-center = 
+modules-right = 
+
+separator =
+dim-value = 1.0
+
+wm-restack = bspwm
+enable-ipc = true
+
+cursor-click = pointer 
+
+## ----------------------------------  [bar/bar3] ---------------------------------- ##
+
+[bar/bar3]
+
+monitor = 
+monitor-fallback =
+monitor-strict = false
+
+override-redirect = false
+
+bottom = false
+fixed-center = true
+
+width = 7.9%
+height = 30
+
+offset-x = 16.7%
+offset-y = 0.5%
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+radius = 6
+
+line-size = 2
+line-color = ${color.blue}
+
+border-size = 0
+border-color = ${color.bg}
+
+padding = 1
+
+module-margin-left = 0
+module-margin-right = 1
+
+font-0 = "Ubuntu Nerd Font:style=bold:size=10;3"
+font-1 = "Ubuntu Nerd Font:style=bold:size=12;3"
+font-2 = "google\-mdi:size=10;2"
+font-3 = "Ubuntu:style=bold:size=12;3"
+font-4 = "Ubuntu Nerd Font:style=bold:size=18;4"
+font-5 = "Ubuntu:style=bold:size=18;4"
+font-6 = "waffle:size=18;3"
+font-7 = "Ubuntu:style=bold:size=10;3"
+
+
+modules-left = 
+modules-center = space ethernet space sep-line space protonvpn space
+modules-right = 
+
+separator =
+dim-value = 1.0
+
+wm-restack = bspwm
+enable-ipc = true
+
+cursor-click = pointer 
+
+## ----------------------------------  [bar/bar4] ---------------------------------- ##
+
+[bar/bar4]
+
+monitor = 
+monitor-fallback =
+monitor-strict = false
+
+override-redirect = false
+
+bottom = false
+fixed-center = true
+
+width = 38.4%
+height = 30
+
+offset-x = 25%
+offset-y = 0.5%
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+radius = 6
+
+line-size = 2
+line-color = ${color.blue}
+
+border-size = 0
+border-color = ${color.bg}
+
+padding = 1
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = "Ubuntu Nerd Font:size=10;3"
+font-1 = "Ubuntu Nerd Font:size=8;2k"
+font-2 = "google\-mdi:size=8;2"
+font-3 = "Ubuntu:style=bold:size=8;2"
+font-4 = "Ubuntu Nerd Font:size=18;4"
+font-5 = "Ubuntu:style=bold:size=18;4"
+font-6 = "Material Design Icons:style=Bold:size18;4"
+font-7 = "Ubuntu:style=bold:size=11;3"
+
+
+modules-left   = 
+modules-center = title 
+modules-right  = 
+
+
+separator =
+dim-value = 1.0
+
+wm-restack = bspwm
+enable-ipc = true
+
+cursor-click = pointer 
+cursor-scroll = ns-resize
+
+
+
+## ----------------------------------  [bar/bar5] ---------------------------------- ##
+
+[bar/bar5]
+
+monitor = 
+monitor-fallback =
+monitor-strict = false
+
+override-redirect = false
+
+bottom = false
+fixed-center = true
+
+width = 9.95%
+height = 30
+
+offset-x = 63.75%
+offset-y = 0.5%
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+radius = 6
+
+line-size = 2
+line-color = ${color.blue}
+
+border-size = 0
+border-color = ${color.bg}
+
+padding = 1
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "Ubuntu Nerd Font:style=bold:size=10;3"
+font-1 = "Ubuntu Nerd Font:style=bold:size=12;3"
+font-2 = "google\-mdi:size=10;2"
+font-3 = "Ubuntu:style=bold:size=12;3"
+font-4 = "Ubuntu Nerd Font:style=bold:size=18;4"
+font-5 = "Ubuntu:style=bold:size=18;4"
+font-6 = "waffle:size=18;3"
+font-7 = "Ubuntu:style=bold:size=11;2"
+font-8 = "Ubuntu:style=bold:size=9;2"
+
+modules-left   = 
+modules-center = space spotify-prev spotify spotify-next space 
+modules-right  = 
+
+separator = 
+dim-value = 1.0
+
+wm-restack = bspwm
+enable-ipc = true
+
+cursor-click = pointer 
+
+
+## ----------------------------------  [bar/bar6] ---------------------------------- ##
+
+[bar/bar6]
+
+monitor = 
+monitor-fallback =
+monitor-strict = false
+
+override-redirect = false
+
+bottom = false
+fixed-center = true
+
+width = 7%
+height = 30
+
+offset-x = 74%
+offset-y = 0.5%
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+radius = 6
+
+line-size = 2
+line-color = ${color.blue}
+
+border-size = 0
+border-color = ${color.bg}
+
+padding = 1
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "Ubuntu Nerd Font:style=bold:size=10;3"
+font-1 = "Ubuntu Nerd Font:style=bold:size=12;3"
+font-2 = "google\-mdi:size=10;2"
+font-3 = "Ubuntu:style=bold:size=12;3"
+font-4 = "Ubuntu Nerd Font:style=bold:size=18;4"
+font-5 = "Ubuntu:style=bold:size=18;4"
+font-6 = "waffle:size=18;3"
+font-7 = "Ubuntu:style=bold:size=11;2"
+font-8 = "Ubuntu:style=bold:size=9;2"
+
+modules-left   = 
+modules-center = space volume space sep-line space sysmenu space
+modules-right  = 
+
+separator = 
+dim-value = 1.0
+
+wm-restack = bspwm
+enable-ipc = true
+
+cursor-click = pointer 
+
+## ----------------------------------  [bar/bar7] ---------------------------------- ##
+
+
+[bar/bar7]
+
+monitor = 
+monitor-fallback =
+monitor-strict = false
+
+override-redirect = false
+
+bottom = false
+fixed-center = true
+
+width = 18.45%
+height = 30
+
+offset-x = 81.28%
+offset-y = 0.5%
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+radius = 6
+
+line-size = 2
+line-color = ${color.blue}
+
+border-size = 0
+border-color = ${color.bg}
+
+padding = 1
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = "Ubuntu Nerd Font:size=10;3"
+font-1 = "Ubuntu Nerd Font:size=12;3"
+font-2 = "google\-mdi:size=12;3"
+font-3 = "Ubuntu:style=bold:size=12;3"
+font-4 = "Ubuntu Nerd Font:size=18;4"
+font-5 = "Ubuntu:style=bold:size=18;4"
+
+modules-left = date
+modules-center =
+modules-right = 
+
+separator =
+dim-value = 1.0
+
+tray-position = right
+tray-detached = true
+tray-maxsize = 16
+tray-background = ${color.bg}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
+
+wm-restack = bspwm
+enable-ipc = true
+
+cursor-click = pointer 
+
+
+[settings]
+
+screenchange-reload = false
+
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
+
+pseudo-transparency = true
