@@ -199,10 +199,10 @@ override-redirect = false
 bottom = false
 fixed-center = true
 
-width = 38.4%
+width = 35.45%
 height = 30
 
-offset-x = 25%
+offset-x = 24.94%
 offset-y = 0.5%
 
 background = ${color.bg}
@@ -263,7 +263,7 @@ fixed-center = true
 width = 9.95%
 height = 30
 
-offset-x = 63.75%
+offset-x = 60.75%
 offset-y = 0.5%
 
 background = ${color.bg}
@@ -283,14 +283,14 @@ module-margin-left = 1
 module-margin-right = 1
 
 font-0 = "Ubuntu Nerd Font:style=bold:size=10;3"
-font-1 = "Ubuntu Nerd Font:style=bold:size=12;3"
+font-1 = "Font Awesome 6 Brands:size=12;3"
 font-2 = "google\-mdi:size=10;2"
 font-3 = "Ubuntu:style=bold:size=12;3"
 font-4 = "Ubuntu Nerd Font:style=bold:size=18;4"
 font-5 = "Ubuntu:style=bold:size=18;4"
 font-6 = "waffle:size=18;3"
 font-7 = "Ubuntu:style=bold:size=11;2"
-font-8 = "Ubuntu:style=bold:size=9;2"
+font-8 = "Ubuntu:style=bold:size=8;2"
 
 modules-left   = 
 modules-center = space spotify-prev spotify spotify-next space 
@@ -318,10 +318,10 @@ override-redirect = false
 bottom = false
 fixed-center = true
 
-width = 7%
+width = 10.5%
 height = 30
 
-offset-x = 74%
+offset-x = 71%
 offset-y = 0.5%
 
 background = ${color.bg}
@@ -337,7 +337,7 @@ border-color = ${color.bg}
 
 padding = 1
 
-module-margin-left = 1
+module-margin-left = 0
 module-margin-right = 1
 
 font-0 = "Ubuntu Nerd Font:style=bold:size=10;3"
@@ -350,8 +350,9 @@ font-6 = "waffle:size=18;3"
 font-7 = "Ubuntu:style=bold:size=11;2"
 font-8 = "Ubuntu:style=bold:size=9;2"
 
+
 modules-left   = 
-modules-center = space volume space sep-line space sysmenu space
+modules-center = space mic-volume space sep-line space volume space sep-line space sysmenu space
 modules-right  = 
 
 separator = 
@@ -376,10 +377,10 @@ override-redirect = false
 bottom = false
 fixed-center = true
 
-width = 18.45%
+width = 17.9%
 height = 30
 
-offset-x = 81.28%
+offset-x = 81.8%
 offset-y = 0.5%
 
 background = ${color.bg}
