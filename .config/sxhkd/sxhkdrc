@@ -6,9 +6,28 @@
 super + Return
 	terminator
 
+# power menu
+super + alt + Escape
+	~/.config/rofi/powermenu/powermenu.sh
+
+# hide/unhide window
+super + d
+	bspc node $1 --flag sticky=on; bspc node $1 --flag hidden=on
+
+super + Tab
+	~/.config/bspwm/showHidden.sh
+
 # program launcher
 alt + @space
 	rofi -show drun
+
+# rofi emoji
+super + alt + x
+	rofi -show emoji
+
+# rofi clipboard manager
+super + alt + c
+	rofi-gpaste
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -71,7 +90,8 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {grave,Tab}
+# super + {grave,Tab}
+super + shift + d
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
@@ -119,3 +139,29 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Screenshot
+Print
+	flameshot gui
+
+
+# Volume Control
+XF86AudioLowerVolume
+	amixer set Master 1%-
+
+XF86AudioRaiseVolume
+	amixer set Master 1%+
+
+XF86AudioMute
+	amixer -D pulse set Master toggle
+
+
+# Music Control
+XF86AudioNext
+	playerctl -p spotify next
+
+XF86AudioPrev
+	playerctl -p spotify previous
+
+XF86AudioPlay
+	playerctl -p spotify play-pause
