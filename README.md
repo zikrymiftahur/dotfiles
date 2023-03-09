@@ -10,7 +10,7 @@ Homepage
 
 Application Window
 
-![App Screenshot](https://cdn.jsdelivr.net/gh/zikrymiftahur/dotfiles@master/screenshots/application-window.png)
+![App Screenshot](https://cdn.jsdelivr.net/gh/zikrymiftahur/dotfiles@master/screenshots/app-window.png)
 
 Polybar
 
