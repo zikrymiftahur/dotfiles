@@ -22,6 +22,17 @@
         },
         {
           "background": "#000000",
+          "foreground": "#ecad00",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "time_format": "15:04:05"
+          },
+          "style": "powerline",
+          "template": " {{ .CurrentDate | date .Format }} <#9d00ff> \ue285 </>",
+          "type": "time"
+        },
+        {
+          "background": "#000000",
           "foreground": "#0bed0b",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -29,7 +40,7 @@
             "style": "folder"
           },
           "style": "powerline",
-          "template": " \ue5ff {{ .Path }} ",
+          "template": "\ue5ff {{ .Path }} ",
           "type": "path"
         },
         {
@@ -75,24 +86,6 @@
           "style": "powerline",
           "template": " \uf7d4  ",
           "type": "exit"
-        }
-      ],
-      "type": "prompt"
-    },
-    {
-      "alignment": "right",
-      "segments": [
-        {
-          "background": "#ecad00",
-          "foreground": "#000000",
-          "leading_diamond": "\ue0b2",
-          "properties": {
-            "time_format": "15:04:05"
-          },
-          "style": "diamond",
-          "template": " {{ .CurrentDate | date .Format }} ",
-          "trailing_diamond": "\ue0b0 ",
-          "type": "time"
         }
       ],
       "type": "prompt"
